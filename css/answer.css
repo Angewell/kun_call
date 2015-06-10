@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+@font-face { 
+	font-family: 'SourceHanSansCN-Bold'; 
+	src: url('../font/SourceHanSansCN-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html,body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#container {
+	width: 100%;
+	height: 100%;
+	max-width: 640px;
+	min-width: 320px;
+	margin: 0 auto;
+	background-color: #3e3a39;
+	overflow: hidden;
+	-webkit-transform-origin: top center;
+	transform-origin: top center;
+}
+.swiper-container,
+.swiper-wrapper,
+.swiper-slide {
+	height: 100%;
+}
+.swiper-container {
+	overflow: hidden;
+}
+@-webkit-keyframes upDown {
+	0% {
+		-webkit-transform: translateY(0) scale(1);
+		transform: translateY(0) scale(1);
+
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: translateY(-50px) scale(0.8);
+		transform: translateY(-50px) scale(0.8);
+		opacity: .4;
+	}
+}
+.upArrow {
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	margin-left: -38px;
+	-webkit-animation: upDown 1.2s ease-out infinite;
+	animation: upDown 1.2s ease-out infinite;
+}
+
+/***** loading ******/
+#loading {
+	position: relative;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	background-color: #333;
+}
+#loading img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -32px 0 0 -32px;
+}
+/******* page1 ******/
+.page1_img {
+	position: absolute;
+}
+.page1_title {
+	top: 50%;
+	left: 0;
+	margin-top: -200px;
+}
+.page1_icon {
+	top: 40px;
+	right: 40px;
+}
+
+/************ page2 **************/
+.page2_inner {
+	position: absolute;
+	top:20px;
+	left: 0;
+	width: 640px;
+	height: 912px;
+	background:url(../img/p2_bg.png) no-repeat;
+}
+.page2_num {
+	position: absolute;
+	font-family: 'SourceHanSansCN-Bold';
+	font-weight: 800;
+	letter-spacing: -5px;
+	text-align: center;
+}
+.page2_num1 {
+	top:127px;
+	left: 47px;
+	width: 104px;
+	height: 165px;
+	line-height: 170px;
+	font-size: 170px;
+	color: #79dfbb;
+}
+.page2_num2 {
+	top:198px;
+	left: 352px;
+	width: 242px;
+	height: 104px;
+	line-height: 110px;
+	font-size: 105px;
+	color: #5d72c9;
+}
+.page2_num3 {
+	top: 292px;
+	left: 255px;
+	width: 104px;
+	height: 56px;
+	line-height: 62px;
+	font-size: 56px;
+	color: #e7ae6e;
+}
+.page2_num4 {
+	top:348px;
+	left: 354px;
+	width: 157px;
+	height: 88px;
+	line-height: 96px;
+	font-size: 100px;
+	color: #f5836e;
+}
+.page2_num5 {
+	top:594px;
+	right: 34px;
+	width: 308px;
+	height: 150px;
+	line-height: 155px;
+	font-size: 165px;
+	color: #4f9abf;
+}
+.page2_num6 {
+	bottom: 23px;
+	right: 42px;
+	width: 374px;
+	height: 68px;
+	line-height: 74px;
+	font-size: 68px;
+	color: #79dfbb;
+}
+
+
+/****** page3 *******/
+.p3_img {
+	display: block;
+}
+.page3_1 {
+	padding-top: 60px;
+}
+.clearfix:after {
+	content: " ";
+	display: block;
+	height: 0;
+	width: 0;
+	visibility: hidden;
+	clear: both;
+}
+.icon_box {
+	padding-top: 40px;
+}
+.icon_con {
+	float: left;
+	width: 25%;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.p3_13 {
+	margin-top: 40px;
+}
+.page3_2 {
+	position: relative;
+	height: 233px;
+	margin-top:40px;
+}
+.p3_14 {
+	position: absolute;
+	bottom: 0;
+	left: 60px;
+}
+.p3_15 {
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	margin-left: -22px;
+}
+.p3_16 {
+	position: absolute;
+	bottom: 0;
+	right: 60px;
+}
+
+/****** page4 ******/
+.page4_1 {
+	padding-top: 40px;
+}
+.page4_1 img {
+	display: block;
+}
+.p4_03 {
+	margin-top: 140px;
+}
+.page4_2 {
+	padding-top:20px;
+}
+.p4_icon_box {
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+.page4_3 {
+	margin-top: 40px;
+	text-align: center;
+}
+
+/******* page5 ******/
+.page5_inner {
+	padding-top: 40px;
+}
+.page5_inner img {
+	display: block;
+}
+.p5_06 {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+/***** page6 ****/
+.page6_inner {
+	padding-top: 60px;
+}
+.p6_link {
+	display: block;
+}
+.p6_link1 {
+	margin-top: 120px;
+}
+.p6_link2 {
+	position: relative;
+	z-index: 99;
+	margin-top: 20px;
+}
+.p6_05 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.page6_mask {
+	display: none;
+	position: absolute;
+	z-index: 88;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/tip_icon.png) right top no-repeat rgba(0,0,0,.7);
+}
+.tip_icon {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
